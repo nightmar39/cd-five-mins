@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-pod-dev
+  namespace: codefresh
+  labels:
+    app: nginx-pod-dev
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: nginx-pod-dev
+    name: in-cluster
+  project: nginx-pod
+  source:
+    repoURL: https://github.com/GITHUB_USER/GITHUB_REPO.git
+    targetRevision: main
+    path: ./k8s-resources/nginx-pod/dev
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      prune: true
