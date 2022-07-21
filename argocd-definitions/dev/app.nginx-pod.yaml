@@ -10,7 +10,7 @@ metadata:
 spec:
   destination:
     namespace: nginx-pod-dev
-    name: in-cluster
+    name: CLUSTER_NAME
   project: nginx-pod
   source:
     repoURL: https://github.com/GITHUB_USER/GITHUB_REPO.git

@@ -10,7 +10,7 @@ metadata:
 spec:
   destination:
     namespace: express-dev
-    name: in-cluster
+    name: CLUSTER_NAME
   project: express
   source:
     path: ./k8s-resources/express/overlays/dev
