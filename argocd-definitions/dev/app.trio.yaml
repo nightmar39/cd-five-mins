@@ -13,7 +13,7 @@ spec:
     name: CLUSTER_NAME
   project: trio
   source:
-    repoURL: https://github.com/GITHUB_USER/GITHUB_REPO.git
+    repoURL: https://github.com/nightmar39/cd-five-mins.git
     targetRevision: main
     path: ./k8s-resources/trio/dev
     helm:

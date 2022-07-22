@@ -14,7 +14,7 @@ spec:
   project: express
   source:
     path: ./k8s-resources/express/overlays/dev
-    repoURL: https://github.com/GITHUB_USER/GITHUB_REPO.git
+    repoURL: https://github.com/nightmar39/cd-five-mins.git
     targetRevision: main
   syncPolicy:
     syncOptions:
