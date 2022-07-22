@@ -10,7 +10,6 @@ spec:
   destination:
     namespace: express-dev
     name: arn-aws-eks-us-east-2-835357571861-cluster-us-support-v2-clus
-  project: express
   source:
     path: ./k8s-resources/express/overlays/dev
     repoURL: https://github.com/nightmar39/cd-five-mins.git
