@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Deployment
 metadata:
   name: express-microservice
-  namespace: codefresh
 spec:
   replicas: 4
   # revisionHistoryLimit>2 not supported right now
