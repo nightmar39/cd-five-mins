@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: nginx-pod-dev
-  namespace: codefresh
   labels:
     app: nginx-pod-dev
   finalizers:

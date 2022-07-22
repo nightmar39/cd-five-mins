@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: trio-dev
-  namespace: codefresh
   labels:
     app: trio-dev
   finalizers:
