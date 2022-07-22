@@ -7,7 +7,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: trio
+  project: git-sources
   destination:
     namespace: trio-dev
     name: us-support-v2-cluster
