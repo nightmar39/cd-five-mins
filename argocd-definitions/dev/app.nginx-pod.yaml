@@ -7,7 +7,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: express
+  project: nginx-pod
   destination:
     namespace: nginx-pod-dev
     name: us-support-v2-cluster
