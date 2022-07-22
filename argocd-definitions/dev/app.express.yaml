@@ -10,7 +10,7 @@ metadata:
 spec:
   destination:
     namespace: express-dev
-    name: CLUSTER_NAME
+    name: arn-aws-eks-us-east-2-835357571861-cluster-us-support-v2-clus
   project: express
   source:
     path: ./k8s-resources/express/overlays/dev

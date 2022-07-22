@@ -10,7 +10,7 @@ metadata:
 spec:
   destination:
     namespace: nginx-pod-dev
-    name: CLUSTER_NAME
+    name: arn-aws-eks-us-east-2-835357571861-cluster-us-support-v2-clus
   project: nginx-pod
   source:
     repoURL: https://github.com/nightmar39/cd-five-mins.git
