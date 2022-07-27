@@ -10,7 +10,7 @@ spec:
   project: default
   destination:
     namespace: trio-dev
-    name: us-support-v2-cluster
+    name: docker-ngrok
   source:
     repoURL: https://github.com/nightmar39/cd-five-mins.git
     targetRevision: main
