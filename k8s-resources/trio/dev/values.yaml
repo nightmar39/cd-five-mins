@@ -1,5 +1,5 @@
 buslog:
-  replicaCount: 2
+  replicaCount: 1
   image:
     repository: quay.io/codefresh_sa/buslog
     tag: "4ed1e59"
