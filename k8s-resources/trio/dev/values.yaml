@@ -9,7 +9,7 @@ ctrlr:
     repository: quay.io/codefresh_sa/ctrlr
     tag: "2b6d88e"
 flask-ui:
-  replicaCount: 1
+  replicaCount: 2
   image:
     repository: quay.io/codefresh_sa/flask-ui
     tag: "1b8d478"
