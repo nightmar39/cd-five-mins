@@ -9,8 +9,8 @@ metadata:
 spec:
   project: default
   destination:
-    namespace: trio-dev
-    name: docker-ngrok
+    namespace: cf-deploy
+    name: in-cluster
   source:
     repoURL: https://github.com/nightmar39/cd-five-mins.git
     targetRevision: main
