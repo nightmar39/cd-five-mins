@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   destination:
-    namespace: cf-deploy
+    namespace: cf-demo
     name: in-cluster
   source:
     repoURL: https://github.com/nightmar39/cd-five-mins.git
