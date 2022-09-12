@@ -8,8 +8,8 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: express-dev
-    name: docker-ngrok
+    namespace: cf-deploy
+    name: in-cluster
   project: default
   source:
     path: ./k8s-resources/express/overlays/dev
