@@ -2,27 +2,29 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: trio-dev
-  labels:
-    app: trio-dev
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  destination:
-    namespace: cf-demo
-    name: in-cluster
   source:
-    repoURL: https://github.com/nightmar39/cd-five-mins.git
-    targetRevision: main
     path: ./k8s-resources/trio/dev
+    repoURL: https://github.com/nightmar39/cd-five-mins.git
+    targetRevision: hosted-demo
     helm:
+      valueFiles:
+        - values.yaml
       parameters:
         - name: buildID
           value: argocd
-      valueFiles:
-        - values.yaml
+  destination:
+    name: in-cluster
+    namespace: cf-demo
   syncPolicy:
-    syncOptions:
-      - CreateNamespace=true
     automated:
       prune: true
+      selfHeal: false
+    syncOptions:
+      - PrunePropagationPolicy=foreground
+      - Replace=false
+      - PruneLast=false
+      - Validate=true
+      - CreateNamespace=true
+      - ApplyOutOfSyncOnly=false
